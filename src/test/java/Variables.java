@@ -46,5 +46,8 @@ public class Variables {
         double hsChemistry = 2;
         System.out.println("Average Score " + (((maths * hsMaths) + (phys * hsPhys) + (chemistry * hsChemistry)) / 7));
     }
+    public static void abc(){
+
+    }
 
 }
