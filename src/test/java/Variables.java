@@ -9,7 +9,10 @@ public class Variables {
         //Age();
         //CaculateNumber();
         //calculateVAT();
-        score();
+        // scoreStudent();
+        // calculateCircle();
+        //vehicleNumber();
+        minMax();
     }
 
     public static void Age() {
@@ -37,7 +40,7 @@ public class Variables {
         System.out.println("VAT is " + (quantity * unitPrice) * 0.1);
     }
 
-    public static void score() {
+    public static void scoreStudent() {
         double maths = 8.5;
         double phys = 6;
         double chemistry = 4.5;
@@ -46,8 +49,39 @@ public class Variables {
         double hsChemistry = 2;
         System.out.println("Average Score " + (((maths * hsMaths) + (phys * hsPhys) + (chemistry * hsChemistry)) / 7));
     }
-    public static void abc(){
+
+    public static void calculateCircle() {
+        int r = 5;
+        double c = (r * 2) * Math.PI;
+        System.out.println("S is " + (r * r * Math.PI));
+        System.out.println("C is " + c);
 
     }
 
+    public static void vehicleNumber() {
+        int number = 6339;
+        int n1;
+        int s = 0;
+        for (; number != 0; ) {
+            n1 = number % 10;
+            s += n1;
+            number /= 10;
+        }
+        System.out.println(s);
+    }
+
+    public static void minMax() {
+        int a = 22;
+        int b = 13;
+        int max;
+        int min;
+        if (a > b) {
+            max = a;
+            min = b;
+        } else {
+            max = b;
+            min = a;
+        }
+        System.out.println("min: " + min + " max: " + max);
+    }
 }
