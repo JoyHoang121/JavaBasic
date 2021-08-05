@@ -7,12 +7,12 @@ public class Variables {
 
     public static void main(String[] args) {
         //Age();
-        //CaculateNumber();
+        //CalculateNumber();
         //calculateVAT();
         // scoreStudent();
         // calculateCircle();
-        //vehicleNumber();
-        minMax();
+       // vehicleNumber();
+         minMax();
     }
 
     public static void Age() {
@@ -22,7 +22,7 @@ public class Variables {
         System.out.println("Your age is " + age);
     }
 
-    public static void CaculateNumber() {
+    public static void CalculateNumber() {
         int a = 9;
         int b = 10;
         double a1 = (double) a;
@@ -60,14 +60,14 @@ public class Variables {
 
     public static void vehicleNumber() {
         int number = 6339;
-        int n1;
-        int s = 0;
-        for (; number != 0; ) {
-            n1 = number % 10;
-            s += n1;
-            number /= 10;
+        int tam;
+        int sum = 0;
+        while (number > 0) {
+            tam = number % 10;
+            sum = sum + tam;
+            number = number / 10;
         }
-        System.out.println(s);
+        System.out.println(sum);
     }
 
     public static void minMax() {
