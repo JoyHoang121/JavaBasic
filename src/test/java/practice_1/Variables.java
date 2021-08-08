@@ -1,3 +1,4 @@
+package practice_1;
 
 import java.util.Calendar;
 
@@ -11,8 +12,8 @@ public class Variables {
         //calculateVAT();
         // scoreStudent();
         // calculateCircle();
-       // vehicleNumber();
-         minMax();
+        LicensePlate();
+        // minMax();
     }
 
     public static void Age() {
@@ -58,7 +59,7 @@ public class Variables {
 
     }
 
-    public static void vehicleNumber() {
+    public static void LicensePlate() {
         int number = 6339;
         int tam;
         int sum = 0;
@@ -67,7 +68,7 @@ public class Variables {
             sum = sum + tam;
             number = number / 10;
         }
-        System.out.println(sum);
+        System.out.println(sum%10);
     }
 
     public static void minMax() {
