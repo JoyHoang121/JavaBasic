@@ -103,29 +103,6 @@ public class Exercise_2 {
     }
 
     public static void sapXepMangTangDan() {
-       // System.out.println("Mời nhập số phần tử cho mảng: ");
-//        Scanner scanner = new Scanner(System.in);
-//        int n = scanner.nextInt();
-//        int[] a = new int[n];
-//        System.out.println("Nhập các phần tử của mảng: ");
-//        for (int i = 0; i < n; i++) {
-//            System.out.printf("a[%d] = ", i);
-//            a[i] = scanner.nextInt();
-//        }
-//        System.out.println("Sap xep cac phan tu cua mang theo chieu tăng dần:");
-//        int i, j, tam;
-//        for (i = 0; i < n; i++) {
-//            for (j = i + 1; j < n; j++) {
-//                if (a[i] > a[j]) {
-//                    tam = a[i];
-//                    a[i] = a[j];
-//                    a[j] = tam;
-//                }
-//            }
-//            System.out.print("a" + "[" + i + "]" + "=");
-//            System.out.println(a[i]);
-//        }
-
         System.out.println("Mời nhập số a");
         Scanner n=new Scanner(System.in);
         int a=n.nextInt();
