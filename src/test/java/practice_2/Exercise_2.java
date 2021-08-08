@@ -137,7 +137,6 @@ public class Exercise_2 {
             c = d;
             c = temp;
         }
-
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
