@@ -118,11 +118,6 @@ public class Exercise_2 {
             a=b;
             b=temp;
         }
-        if(a>c){
-            temp=a;
-            a=c;
-            c=temp;
-        }
         if(b>c){
             temp=b;
             b=c;
@@ -132,6 +127,11 @@ public class Exercise_2 {
             temp=c;
             c=d;
             d=temp;
+        }
+        if(b>c){
+            temp=b;
+            b=c;
+            c=temp;
         }
 
         System.out.println(a);
