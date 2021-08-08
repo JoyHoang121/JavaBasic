@@ -136,19 +136,16 @@ public class Exercise_2 {
         System.out.println("Mời nhập só d");
         int d=n.nextInt();
         int temp;
-        if(a>b||a>c||a>d){
+        if(a>b){
             temp=a;
             a=b;
             b=temp;
         }
-
         if(a>c){
             temp=a;
             a=c;
             c=temp;
         }
-
-        // chuyển số bé nhì vào b
         if(b>c){
             temp=b;
             b=c;
