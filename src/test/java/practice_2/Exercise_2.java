@@ -1,7 +1,6 @@
 package practice_2;
 
 
-
 import java.util.Scanner;
 
 public class Exercise_2 {
@@ -104,44 +103,44 @@ public class Exercise_2 {
 
     public static void sapXepMangTangDan() {
         System.out.println("Mời nhập số a");
-        Scanner n=new Scanner(System.in);
-        int a=n.nextInt();
+        Scanner n = new Scanner(System.in);
+        int a = n.nextInt();
         System.out.println("Mời nhập số b");
-        int b=n.nextInt();
+        int b = n.nextInt();
         System.out.println("Mời nhập số c");
-        int c=n.nextInt();
+        int c = n.nextInt();
         System.out.println("Mời nhập só d");
-        int d=n.nextInt();
+        int d = n.nextInt();
         int temp;
-        if(a>b){
-            temp=a;
-            a=b;
-            b=temp;
+        if (a > b) {
+            temp = a;
+            a = b;
+            b = temp;
         }
-        if(a>c){
-            temp=b;
-            b=c;
-            c=temp;
+        if (a > c) {
+            temp = a;
+            a = c;
+            c = temp;
         }
-        if(a>d){
-            temp=a;
-            a=d;
-            d=temp;
+        if (a > d) {
+            temp = a;
+            a = d;
+            d = temp;
         }
-        if(b>c){
-            temp=b;
-            b=c;
-            c=temp;
+        if (b > c) {
+            temp = b;
+            b = c;
+            c = temp;
         }
-        if(b>d){
-            temp=b;
-            b=d;
-            d=temp;
+        if (b > d) {
+            temp = b;
+            b = d;
+            d = temp;
         }
-        if(c>d){
-            temp=c;
-            c=d;
-            c=temp;
+        if (c > d) {
+            temp = c;
+            c = d;
+            c = temp;
         }
 
         System.out.println(a);
