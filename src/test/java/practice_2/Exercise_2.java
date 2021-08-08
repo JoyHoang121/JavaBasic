@@ -118,19 +118,29 @@ public class Exercise_2 {
             a=b;
             b=temp;
         }
-        if(b>c){
+        if(a>c){
             temp=b;
             b=c;
             c=temp;
         }
-        if(c>d){
-            temp=c;
-            c=d;
+        if(a>d){
+            temp=a;
+            a=d;
             d=temp;
         }
         if(b>c){
             temp=b;
             b=c;
+            c=temp;
+        }
+        if(b>d){
+            temp=b;
+            b=d;
+            d=temp;
+        }
+        if(c>d){
+            temp=c;
+            c=d;
             c=temp;
         }
 
