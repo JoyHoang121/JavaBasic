@@ -26,11 +26,11 @@ public class Loop {
 //            System.out.println("ko fai số chính phương");
 //        }
 
-       //  tinhGiaithua(n);
-         tinhTongCacGiaiThua(n);
-//         tinhTongSoNguyenTo(n);
-//         xuatSoNguoc(n);
-//         kiemTraSoDoiXung(n);
+//             tinhGiaithua(n);
+            tinhTongCacGiaiThua(n);
+//             tinhTongSoNguyenTo(n);
+//             xuatSoNguoc(n);
+//              kiemTraSoDoiXung(n);
     }
 
     public static int sum(int n) {
@@ -84,14 +84,14 @@ public class Loop {
 
     //tinh tong giai thua S=1!+2!+3!...n!
     public static void tinhTongCacGiaiThua(int n) {
-        int s = 1;
+        int s = 0;
         {
                for (int i = 1; i <= n; i++) {
-                s = s *i;
+                   s += tinhGiaithua(i);
             }
-
+            System.out.format("Tổng các giai thừa %d là: %d ", n, s);
         }
-       System.out.format("Tổng các giai thừa %d là: %d ", n, s);
+
     }
 
     //tính tổng số nguyên tố nhỏ hơn n
