@@ -1,9 +1,9 @@
-package practice_2;
+package practice_2_ifelse;
 
 
 import java.util.Scanner;
 
-public class Exercise_2 {
+public class Exercise_2_ifelse {
     public static void main(String[] args) {
         // printNumber();
         // printCharacter();
@@ -183,7 +183,6 @@ public class Exercise_2 {
         } else {
             System.out.println("Tháng nhập không hợp lệ");
         }
-
 
     }
 

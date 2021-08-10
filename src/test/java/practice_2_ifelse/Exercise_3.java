@@ -1,46 +1,49 @@
-package practice_2;
+package practice_2_ifelse;
 
 import java.util.Scanner;
 
-public class exercise_3 {
-    static boolean year1 = false;
+public class Exercise_3 {
+   // static boolean year1 = false;
+
     static int year;
-
     public static void main(String[] args) {
-
         checkFormatDay();
     }
 
+
+
     public static boolean checkYear() {
+        int[] years = new int[]{};
         System.out.println("Mời nhập năm");
-        Scanner n = new Scanner(System.in);
-        year = n.nextInt();
         if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) {
             System.out.println("Đây là năm nhuận");
-            year1 = true;
+
 
         } else {
             System.out.println("Đây không phải là năm nhuận");
         }
-        return year1;
+        return true;
 
     }
 
     public static void checkFormatDay() {
         checkYear();
-        System.out.println("Mời nhập tháng");
         Scanner n = new Scanner(System.in);
+        int year = n.nextInt();
+        System.out.println("Mời nhập tháng");
         int m = n.nextInt();
+        System.out.println("Mời nhập ngày");
+        int day = n.nextInt();
+
         if (m <= 0 || m > 12) {
             System.out.println("Tháng nhập không hợp lệ,");
         }
-        System.out.println("Mời nhập ngày");
-        int day = n.nextInt();
+
         if (day <= 0) {
             System.out.println("Ngày nhập không hợp lệ,");
         }
         {
-            if (!year1) {
+            if (checkYear()) {
                 if (m == 2) {
                     if (day > 28) {
                         System.out.println("Ngày nhập bị sai");
@@ -88,6 +91,9 @@ public class exercise_3 {
                 System.out.println("Trước ngày nhập 1 ngày " + (day - 1) + "/" + m + '/' + year);
             }
         }
+
+    }
+    public static void checkMonth31days(){
 
     }
 

@@ -1,9 +1,9 @@
-package practice_1;
+package practice_1_variant;
 
 import java.util.Calendar;
 
 
-public class Variables {
+public class Variant {
 
 
     public static void main(String[] args) {
