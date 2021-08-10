@@ -10,26 +10,27 @@ public class Loop {
         if (n < 0) {
             System.out.println("Number is invalid");
         }
-        // int s = sum(n);
-        //  System.out.println(s);
-
+//         int s = sum(n);
+//          System.out.println(s);
+//
 //        if (isPrimeNumber(n)) {
 //            System.out.format("%d là số nguyên tố. \n", n);
 //        } else {
 //            System.out.format("%d không phải là số nguyên tố. \n", n);
 //        }
 
-//        if (kiemTraSoChinhPhuong(n)) {
+
+//       if (kiemTraSoChinhPhuong(n)) {
 //            System.out.println("Là só chính phương");
 //        } else {
 //            System.out.println("ko fai số chính phương");
 //        }
 
-        // tinhGiaithua(n);
-        //tinhTongCacGiaiThua(n);
-        // tinhTongSoNguyenTo(n);
-         xuatSoNguoc(n);
-        //kiemTraSoDoiXung(n);
+       //  tinhGiaithua(n);
+         tinhTongCacGiaiThua(n);
+//         tinhTongSoNguyenTo(n);
+//         xuatSoNguoc(n);
+//         kiemTraSoDoiXung(n);
     }
 
     public static int sum(int n) {
@@ -71,30 +72,26 @@ public class Loop {
             } else {
                 for (int i = 1; i <= n; i++) {
                     sum = sum * i;
-
                 }
 
             }
-
+             System.out.format("Tổng giai thừa của %d là %d \n", n, sum);
         }
-        System.out.format("Tổng giai thừa của %d là %d \n", n, sum);
+
         return sum;
 
     }
 
     //tinh tong giai thua S=1!+2!+3!...n!
     public static void tinhTongCacGiaiThua(int n) {
-        int s = 0;
+        int s = 1;
         {
-            if (n == 0) {
-                s = 1;
-            }
-            for (int i = 1; i < n + 1; i++) {
-                s = s + tinhGiaithua(i);
+               for (int i = 1; i <= n; i++) {
+                s = s *i;
             }
 
         }
-        System.out.format("Tổng các giai thừa %d là: %d ", n, s);
+       System.out.format("Tổng các giai thừa %d là: %d ", n, s);
     }
 
     //tính tổng số nguyên tố nhỏ hơn n
