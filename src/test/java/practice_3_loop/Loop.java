@@ -26,8 +26,8 @@ public class Loop {
 //            System.out.println("ko fai số chính phương");
 //        }
 
-//             tinhGiaithua(n);
-            tinhTongCacGiaiThua(n);
+        tinhGiaithua(n);
+        tinhTongCacGiaiThua(n);
 //             tinhTongSoNguyenTo(n);
 //             xuatSoNguoc(n);
 //              kiemTraSoDoiXung(n);
@@ -66,28 +66,22 @@ public class Loop {
     //tinh giai thua
     public static int tinhGiaithua(int n) {
         int sum = 1;
-        {
-            if (n == 0) {
-                return sum;
-            } else {
-                for (int i = 1; i <= n; i++) {
-                    sum = sum * i;
-                }
-
+        if (n == 0 || n == 1) {
+            return sum;
+        } else {
+            for (int i = 2; i <= n; i++) {
+                sum = sum * i;
             }
-             System.out.format("Tổng giai thừa của %d là %d \n", n, sum);
+            return sum;
         }
-
-        return sum;
-
     }
 
     //tinh tong giai thua S=1!+2!+3!...n!
     public static void tinhTongCacGiaiThua(int n) {
         int s = 0;
         {
-               for (int i = 1; i <= n; i++) {
-                   s += tinhGiaithua(i);
+            for (int i = 1; i <= n; i++) {
+                s += tinhGiaithua(i);
             }
             System.out.format("Tổng các giai thừa %d là: %d ", n, s);
         }
