@@ -22,7 +22,10 @@ public class pratice_array {
             System.out.println("la mang tang dan");
         }
 
-        countNumber(arr1);
+        int count = countNumber(arr1);
+        System.out.println("tổng số chia hết cho 4 nhưng ko chia hết cho 5 là: " + count);
+        System.out.println();
+
         long sumPrime = countPrimeNumber(arr1);
         System.out.println("Tổng số nguyên tố " + sumPrime);
 
@@ -66,13 +69,17 @@ public class pratice_array {
 
     public static int countNumber(int[] arr) {
         int count = 0;
-        for (int j : arr) {
-            if (j % 4 == 0 && j % 5 != 0) {
+        int sum =0;
+        for(int i=0;i<arr.length;i++) {
+            if (arr[i] % 4 == 0 && arr[i] % 5 != 0) {
                 count++;
+                sum+=arr[i];
+
             }
 
         }
-        return count;
+        System.out.println("số chia hết 4 nhưng ko chia hết cho 5 là "+ count);
+        return sum;
 
 
     }
