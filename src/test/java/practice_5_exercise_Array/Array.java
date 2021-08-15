@@ -1,9 +1,9 @@
-package practice_4_array;
+package practice_5_exercise_Array;
 
 import java.util.Scanner;
 
 public class Array {
-    public static void main(String[] args) {
+    public static void test(String[] args) {
 //        int[] arr = {1, 2, 3, 4, 5, 6};
 //        for (int i = 0; i < arr.length; i++) {
 //            System.out.format("%d, ", arr[i]);

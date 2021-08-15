@@ -2,11 +2,11 @@ package practice_2_ifelse;
 
 import java.util.Scanner;
 
-public class Exercise_3 {
+public class Exercise_3_ifelse {
    // static boolean year1 = false;
 
     static int year;
-    public static void main(String[] args) {
+    public static void test(String[] args) {
         checkFormatDay();
     }
 

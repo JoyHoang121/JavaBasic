@@ -6,7 +6,7 @@ import java.util.Calendar;
 public class Variant {
 
 
-    public static void main(String[] args) {
+    public static void test(String[] args) {
         //Age();
         //CalculateNumber();
         //calculateVAT();

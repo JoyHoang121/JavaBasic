@@ -3,11 +3,11 @@ package practice_1_variant;
 import java.util.Scanner;
 
 public class Exercise_2 {
-    public static void main(String []args){
+    public static void test(String []args){
         float f=0.122f;
 
 //        String a = String.valueOf(f);
-//
+//CTRL + SHIFT + R
 //        System.out.println(a);
 
         Scanner a1 = new Scanner(System.in);

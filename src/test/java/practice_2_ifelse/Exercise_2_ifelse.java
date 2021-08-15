@@ -4,7 +4,7 @@ package practice_2_ifelse;
 import java.util.Scanner;
 
 public class Exercise_2_ifelse {
-    public static void main(String[] args) {
+    public static void test(String[] args) {
         // printNumber();
         // printCharacter();
         //PTB1();

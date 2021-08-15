@@ -3,7 +3,7 @@ package practice_3_loop;
 import java.util.Scanner;
 
 public class Loop {
-    public static void main(String[] args) {
+    public static void test(String[] args) {
         System.out.print("Mời nhập n: ");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

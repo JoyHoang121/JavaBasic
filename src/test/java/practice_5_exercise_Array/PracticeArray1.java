@@ -1,7 +1,7 @@
-package practice_4_array;
+package practice_5_exercise_Array;
 
 public class PracticeArray1 {
-    public static void main(String[] args) {
+    public static void test(String[] args) {
         int[] arr = generateArray(5, -10, -40);
         printArray(arr);
         System.out.println();

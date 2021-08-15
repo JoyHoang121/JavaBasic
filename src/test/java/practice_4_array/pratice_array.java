@@ -1,10 +1,13 @@
 package practice_4_array;
 
 public class pratice_array {
-    public static void main(String[] args) {
+
+    // 1 hàm
+    public static void test(String[] args) {
         generateArray(5, 10, 50);
         int[] arr = generateArray(5, 1, 10);
         int[] arr1 = {1, 4, 8, 11, 5, 7, 16};
+        System.out.println(arr1);
 
         // isPrimeArray(arr);
         if (!isPrimeArray(arr1)) {
@@ -20,7 +23,8 @@ public class pratice_array {
         }
 
         countNumber(arr1);
-        countPrimeNumber(arr1);
+        long sumPrime = countPrimeNumber(arr1);
+        System.out.println("Tổng số nguyên tố " + sumPrime);
 
     }
 
@@ -68,17 +72,20 @@ public class pratice_array {
             }
 
         }
-        System.out.println("tổng số lượng số chia hết cho nhưng ko chia hết cho 5 là " + count);
+        System.out.println("tổng số lượng số chia hết cho 4 nhưng ko chia hết cho 5 là " + count);
 
     }
 
-    public static void countPrimeNumber(int[] arr) {
-        for (int j : arr) {
-            if (isPrimeNumber(j)) {
-                System.out.print(j + ",");
-            }
-        }
+    public static long countPrimeNumber(int[] arr) {
+        long sum = 0;
+        for(int i=0;i<arr.length;i++){
+            if (isPrimeNumber(arr[i])) {
+                sum = sum + arr[i];
 
+            }
+
+        }
+        return sum;
 
     }
 
