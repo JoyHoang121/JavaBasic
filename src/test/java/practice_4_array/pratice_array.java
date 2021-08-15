@@ -64,7 +64,7 @@ public class pratice_array {
 
     }
 
-    public static void countNumber(int[] arr) {
+    public static int countNumber(int[] arr) {
         int count = 0;
         for (int j : arr) {
             if (j % 4 == 0 && j % 5 != 0) {
@@ -72,7 +72,8 @@ public class pratice_array {
             }
 
         }
-        System.out.println("tổng số lượng số chia hết cho 4 nhưng ko chia hết cho 5 là " + count);
+        return count;
+
 
     }
 
